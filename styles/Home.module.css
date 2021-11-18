@@ -10,6 +10,41 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #011a36ee;
+}
+
+.rows {
+  min-width: 100%;
+  height: 250px;
+  border: 1px dashed red;
+}
+
+.filters {
+  background-color: #0071f38f;
+  width: 100%;
+  height: auto;
+  padding: 10px 50px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* flex: 1; */
+}
+
+.networks {
+  display: flex;
+}
+
+.popular {
+  margin: 0;
+  width: 150px;
+  height: 50px;
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.streams {
 }
 
 .footer {
