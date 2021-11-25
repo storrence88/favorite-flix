@@ -5,6 +5,7 @@
     background-color: black;
     color: #3c89ab;
     font-size: 20px;
+    font-weight: bold;
     display: flex;
     justify-content: space-around;
     position: fixed;
