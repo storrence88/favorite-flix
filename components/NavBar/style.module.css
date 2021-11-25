@@ -1,0 +1,12 @@
+.navbar {
+    height: 50px;
+    width: 100%;
+    list-style: none;
+    background-color: black;
+    color: #3c89ab;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1;
+}

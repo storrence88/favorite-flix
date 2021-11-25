@@ -1,19 +1,7 @@
-/* .container {
-    font-size: 20px;
-    text-align: center;
-    /* padding: 25px; */
-    /* height: 200px;
-    border: 10px groove rgb(68, 144, 243); */
-    /* background-image: url(https://cdn.pixabay.com/photo/2016/09/14/08/18/film-1668918_960_720.jpg); */
-    /* background-position: 24% 76%; */
-    /* overflow: hidden; */
- 
-/* @media screen and (min-width: 1000px) { */
-    
-.carousel {
+ .carousel {
     height: 500px;
     width: 100%;
     overflow: hidden;
     background: rgba(110, 94, 254, 0.5);
 }
-/* } */
+
