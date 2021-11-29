@@ -5,8 +5,16 @@ import styles from "../styles/Home.module.css";
 import Header from "../components/Header/Header";
 import PageLayout from "../layouts/PageLayout";
 import MostPopular from "./most-popular-row";
+import requests from "./requests";
+import Row from "./content-row";
 
 const Home: NextPage = () => {
+  const listRows = [
+    { name: "Trending", url: requests.fetchTrendingMovie, id: 1 },
+    { name: "Comedy", url: requests.fetchComedyMovies, id: 2 },
+    { name: "Action", url: requests.fetchActionMovies, id: 3 },
+    { name: "Horror", url: requests.fetchHorrorMovies, id: 4 },
+  ];
   return (
     <div className={styles.container}>
       <Head>
@@ -18,7 +26,9 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h2>Body</h2>
-        <MostPopular />
+        {listRows.map((row) => (
+          <Row key={row.id} url={row.url} name={row.name} />
+        ))}
       </main>
 
       <footer className={styles.footer}>

@@ -1,10 +1,10 @@
 import styles from "../styles/Home.module.css";
 
-export default function filters() {
+export default function filters({ name }) {
   return (
     <div className={styles.filters}>
       <div className={styles.popular}>
-        <h2>Popular On </h2>
+        <h2>{name} </h2>
       </div>
 
       <div className={styles.networks}>
