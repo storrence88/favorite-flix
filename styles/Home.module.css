@@ -22,14 +22,24 @@
   flex-wrap: wrap;
 }
 
+.moviesContainer {
+  width: 100%;
+  min-height: 100vh;
+  padding: 4rem;
+  flex: 1 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .rows {
   width: 100%;
   margin-bottom: 15px;
+  border-bottom: 2px solid black;
 }
 
 .posterRow {
   padding: 0px 50px;
-  /* background-color: #47e990c0; */
   display: flex;
   flex-wrap: nowrap;
   overflow-y: hidden;
@@ -74,11 +84,11 @@
   cursor: pointer;
   border-radius: 15px;
   margin: 0px 5px;
-  background-color: tomato;
+  background-color: #ff9926;
 }
 
 #filters__netflix {
-  background-color: #f5a244ce;
+  background-color: #ff9926;
 }
 
 .poster {
