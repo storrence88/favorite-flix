@@ -1,10 +1,10 @@
 import * as React from "react";
-import PageLayout from "../layouts/PageLayout";
 import styles from "../styles/Home.module.css";
 import axios from "./axios";
 import { useState, useEffect } from "react";
 import Poster from "./poster";
 import Filters from "./filters";
+import Navbar from "../components/NavBar/Navbar";
 
 const Movies = () => {
   const [movies, setMovies] = useState([]);
@@ -20,7 +20,8 @@ const Movies = () => {
   }, [url]);
 
   return (
-    <PageLayout>
+    <div>
+      <Navbar />
       <div className={styles.moviesContainer}>
         <Filters name="Popular Movies" />
         {movies.map((movie) => (
@@ -32,7 +33,7 @@ const Movies = () => {
           />
         ))}
       </div>
-    </PageLayout>
+    </div>
   );
 };
 

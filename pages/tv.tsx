@@ -1,10 +1,10 @@
 import * as React from "react";
-import PageLayout from "../layouts/PageLayout";
 import styles from "../styles/Home.module.css";
 import axios from "./axios";
 import { useState, useEffect } from "react";
 import Poster from "./poster";
 import Filters from "./filters";
+import Navbar from "../components/NavBar/Navbar";
 
 const Television = () => {
   const [television, setTelevision] = useState([]);
@@ -13,20 +13,20 @@ const Television = () => {
     async function fetchData() {
       const request = await axios.get(url);
       setTelevision(request.data.results);
-      console.log(request.data.results);
     }
     fetchData();
   }, [url]);
 
   return (
-    <PageLayout>
+    <div>
+      <Navbar />
       <div className={styles.moviesContainer}>
         <Filters name="Popular TV" />
         {television.map((tv) => (
           <Poster key={tv?.id} movie={tv} />
         ))}
       </div>
-    </PageLayout>
+    </div>
   );
 };
 
