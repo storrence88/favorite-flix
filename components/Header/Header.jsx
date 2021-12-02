@@ -1,7 +1,7 @@
-import React from 'react';
-import styles from './style.module.css';
-import Slideshow from './Slideshow';
-import Searchbar from '../NavBar/Searchbar';
+import React from "react";
+import styles from "./style.module.css";
+import Slideshow from "./Slideshow";
+import Searchbar from "../NavBar/Searchbar";
 
 const Header = () => {
   return (
@@ -12,5 +12,8 @@ const Header = () => {
   );
 }
  
+    </div>
+  );
+};
 
 export default Header;
