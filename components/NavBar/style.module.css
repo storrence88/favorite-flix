@@ -1,14 +1,24 @@
 .navbar {
-    height: 50px;
-    width: 100%;
-    list-style: none;
-    background-color: black;
-    color: #3c89ab;
-    font-size: 20px;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-around;
-    position: fixed;
-    z-index: 1;
+  height: 50px;
+  width: 100%;
+  list-style: none;
+  background-color: black;
+  color: #3c89ab;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 1;
 }
 
+.logoContainer {
+  height: 50px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.navLogo {
+  height: 50px;
+}

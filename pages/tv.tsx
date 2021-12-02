@@ -23,7 +23,7 @@ const Television = () => {
       <div className={styles.moviesContainer}>
         <Filters name="Popular TV" />
         {television.map((tv) => (
-          <Poster key={tv?.id} movie={tv} poster={tv.poster_path} data={tv} />
+          <Poster key={tv?.id} movie={tv} />
         ))}
       </div>
     </PageLayout>
