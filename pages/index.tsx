@@ -2,11 +2,11 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import Header from "../components/Header/Header";
+import Header from "../components/Header/Header"; //This can be deleted, the header is ran through PageLayout
 import PageLayout from "../layouts/PageLayout";
-import MostPopular from "./most-popular-row";
 import requests from "./requests";
 import Row from "./content-row";
+
 
 const Home: NextPage = () => {
   const listRows = [
@@ -22,7 +22,7 @@ const Home: NextPage = () => {
         <meta name="Your Favorite Media" content="Created with SUPER POWERS" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <PageLayout></PageLayout>
+      <PageLayout />
 
       <main className={styles.main}>
         <h2>Body</h2>
