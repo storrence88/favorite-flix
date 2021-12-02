@@ -14,7 +14,7 @@ function poster(props) {
       <div className={styles.imgHolder}>
         <img
           src={imageEnd != null ? posterImage : posterPlaceholder} //"https://www.themoviedb.org/t/p/w300_and_h450_bestv2/iF8ai2QLNiHV4anwY1TuSGZXqfN.jpg"
-          alt="Poaster Image"
+          alt="Poster Image"
           className={[
             styles.posterImage,
             imageEnd != null ? "" : styles.grayscale,

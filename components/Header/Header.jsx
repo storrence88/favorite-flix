@@ -7,30 +7,9 @@ const Header = () => {
   return (
     <div className={styles.container}>
       <Slideshow />
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
+      
     </div>
   );
-};
-
-    return (
-      <div className={styles.container}>
-        <Slideshow />
-        
-      </div>
-      );
 }
  
 

@@ -28,18 +28,12 @@ const Searchbar = () => {
         }
         fetchData();
       }, [url]);
-    // const {tracks} = Header;
-    // const {items} = tracks;
 
-    // const filteredItems = getFilteredItems(query, items);
-    
     return ( 
         <div className="searchBar">
             <label htmlFor="">Search:</label>
             <input type="text" onChange={e => setQuery(e.target.value)} ></input>
-            <ul>
-                {/* {filteredItems.map(value => <h1 key={value.name}>{value.name}</h1>)} */}
-            </ul>
+
         </div>
      );
 }
