@@ -14,7 +14,7 @@ const ImagesArray = [
 
 const SlideShow = () => (
   <div className={styles.carousel}>
-    <Carousel autoPlay infiniteLoop interval="10000" >
+    <Carousel autoPlay infiniteLoop interval="10000">
       {ImagesArray.map((image) => (
         <img src={image} />
       ))}
