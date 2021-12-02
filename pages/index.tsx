@@ -6,9 +6,12 @@ import Header from "../components/Header/Header"; //This can be deleted, the hea
 import PageLayout from "../layouts/PageLayout";
 import requests from "./requests";
 import Row from "./content-row";
+import axios from "axios";
 
 
 const Home: NextPage = () => {
+  let url = requests.searchMovie;
+
   const listRows = [
     { name: "Trending", url: requests.fetchTrendingMovie, id: 1 },
     { name: "Comedy", url: requests.fetchComedyMovies, id: 2 },
@@ -25,15 +28,10 @@ const Home: NextPage = () => {
       <PageLayout />
 
       <main className={styles.main}>
-        <h2>Body</h2>
         {listRows.map((row) => (
           <Row key={row.id} url={row.url} name={row.name} />
         ))}
       </main>
-
-      <footer className={styles.footer}>
-        <h2>Footer</h2>
-      </footer>
     </div>
   );
 };

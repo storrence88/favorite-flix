@@ -13,6 +13,15 @@
   /* background-color: #011a36ee; */
 }
 
+.mainMovieSearch {
+  width: 100%;
+  min-height: 100vh;
+  padding: 4rem;
+  flex: 1 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .rows {
   width: 100%;
   margin-bottom: 15px;
@@ -75,6 +84,7 @@
 .poster {
   margin: 0px 5px;
   max-width: 170px;
+  cursor: pointer;
 }
 
 .imgHolder {
@@ -89,6 +99,9 @@
   height: 100%;
   object-fit: cover;
   transition: transform 450ms;
+}
+.grayscale {
+  filter: grayscale(100%);
 }
 
 .posterImage:hover {
