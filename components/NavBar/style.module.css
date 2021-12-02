@@ -1,6 +1,7 @@
 .navbar {
   height: 50px;
   width: 100%;
+  margin-bottom: 50px;
   list-style: none;
   background-color: black;
   color: #3c89ab;

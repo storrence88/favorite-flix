@@ -1,18 +1,9 @@
 import * as React from "react";
-import styles from "./style.module.css";
-import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import axios from "./axios";
 import requests from "./requests";
 import { useStateValue } from "../StateProvider.js";
-/* 
-const getFilteredItems = (query, items) => {
-  if (!query) {
-    return items;
-  }
-  return items.filter((movie) => movie.name.includes(query));
-}; */
 
 const Searchbar = () => {
   const [{}, dispatch] = useStateValue();
