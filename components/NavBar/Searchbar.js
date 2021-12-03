@@ -17,14 +17,19 @@ const Searchbar = () => {
   async function fetchData() {
     const request = await axios.get(url);
 
-    console.log(request.data.results);
-
     dispatch({
       type: "SET_RESULT",
       movies: request.data.results,
     });
     router.push("/searchResult");
   }
+
+  const handleKeyPress = (event) => {
+    // look for the `Enter` keyCode
+    if (event.keyCode === 13 || event.which === 13) {
+      fetchData();
+    }
+  };
 
   return (
     <div>
@@ -33,6 +38,8 @@ const Searchbar = () => {
         type="text"
         onChange={(e) => setQuery(e.target.value)}
         placeholder="Search Movies..."
+        name="searchBar"
+        onKeyPress={handleKeyPress}
       ></input>
       <button onClick={fetchData}> Search</button>
     </div>
