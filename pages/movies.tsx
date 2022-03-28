@@ -26,7 +26,7 @@ const Movies = () => {
         <Filters name="Popular Movies" />
         {movies.map((movie) => (
           <Poster
-            key={movie?.id}
+            key={movie.id}
             movie={movie}
             poster={movie.poster_path}
             data={movie}
