@@ -7,7 +7,7 @@ import Filters from "./filters";
 import Navbar from "../components/NavBar/Navbar";
 
 const Movies = () => {
-  const [movies, setMovies] = useState([]);
+  const [movies, setMovies] = useState<any[]>([]);
   const url =
     "/movie/popular?api_key=faa1c2f74e1e191504ff1107bc98d472&language=en-US&page=1";
   useEffect(() => {
