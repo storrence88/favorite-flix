@@ -16,7 +16,7 @@ const SlideShow = () => (
       interval="7000"
     >
       {imgArray.map((image) => (
-        <img src={image} />
+        <img key={image} src={image} />
       ))}
     </Carousel>
   </div>
