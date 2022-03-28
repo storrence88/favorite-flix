@@ -20,7 +20,7 @@ const SearchResult: NextPage = () => {
       </Head>
       <Navbar />
       <main className={styles.mainMovieSearch}>
-        {searchResultMovies.map((movie) => {
+        {searchResultMovies.map((movie: any) => {
           return (
             <Poster
               key={movie?.id}
