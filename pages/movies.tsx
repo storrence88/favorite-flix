@@ -24,7 +24,7 @@ const Movies = () => {
       <Navbar />
       <div className={styles.moviesContainer}>
         <Filters name="Popular Movies" />
-        {movies.map((movie) => (
+        {movies.map((movie: any) => (
           <Poster
             key={movie.id}
             movie={movie}
