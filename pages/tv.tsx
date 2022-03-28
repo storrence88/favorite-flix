@@ -7,7 +7,7 @@ import Filters from "./filters";
 import Navbar from "../components/NavBar/Navbar";
 
 const Television = () => {
-  const [television, setTelevision] = useState([]);
+  const [television, setTelevision] = useState<any[]>([]);
   const url = "/trending/tv/day?api_key=faa1c2f74e1e191504ff1107bc98d472";
   useEffect(() => {
     async function fetchData() {
